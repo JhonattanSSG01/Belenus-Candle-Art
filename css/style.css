@@ -1,8 +1,77 @@
+:root {
+    --colorWhite: #FFF;
+    --colorBlack: #000;
+    --colorPurplePrimary: #55265A;
+    --colorPurpleSecondary: #7D3286;
+    --colorPurpleThird: #EDA7F5;
+}
+
 *{
     font-family: "RedHatDisplay";
     h1, h2 {
         font-family: Blueberry;
     }
-    background-color: blueviolet;
     color: white;
+}
+
+.container{
+    background: linear-gradient(to right, var(--colorPurpleSecondary), var(--colorPurpleThird));
+}
+
+.container > .header_container{
+    width: 95vw;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.header_container > .header_nav > .logo_header {
+    width: 100px;
+}
+
+.header_container > .header_nav, .header_nav > .ul_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_nav > .ul_nav{
+    width: 35vw;
+}
+
+.header_nav > .ul_nav > .li_nav {
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--colorWhite);
+}
+
+.header_nav > .ul_nav > .li_nav:hover a{
+    color: var(--colorPurpleThird);
+}
+
+.header_nav > .ul_nav > .li_nav > a{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+} 
+
+.header_nav > .btn_nav {
+    padding: 10px 20px;
+    background-color: var(--colorWhite);
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}
+.header_nav > .btn_nav:hover {
+    background-color: var(--colorPurplePrimary);
+    cursor: pointer;
+}
+
+.header_nav > .btn_nav:hover a{
+    color: var(--colorWhite);
+}
+
+.header_nav > .btn_nav > a{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--colorPurplePrimary);
+    text-decoration: none;
 }
