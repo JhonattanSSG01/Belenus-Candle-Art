@@ -16,7 +16,6 @@
 
 .container{
     background: linear-gradient(to right, var(--colorPurpleSecondary), var(--colorPurpleThird));
-    padding: 0 2vw;
 }
 
 .container > .header_container{
@@ -78,18 +77,20 @@
 
 #intro{
     display: flex;
+    padding: 0 2vw;
+    margin-bottom: 4vw;
 }
 
 .intro_img{
     translate: 5vw 0;
 }
 .intro_img img{
-    width: 37vw;
+    width: 30vw;
 }
 .intro_info{
 text-align: right;
 align-items: right;
-translate: 15vw 0;
+translate: 22vw 0;
 width: 40vw;
 
 }
@@ -105,6 +106,7 @@ width: 40vw;
     font-size: 2vw;
     width: 40vw;
     padding-bottom: 1vw;
+    text-align: right;
 }
 .intro_info > .p2{
     font-size: 1.8vw;
@@ -129,7 +131,7 @@ width: 40vw;
     width: 21vw;
 
 }
-.faq_button, .gallery_button {
+.faq_button, .gallery_button, .empezar_button {
     padding: 1vw 2vw;
     margin: 0 0.5vw;
     border-radius: 1vw;
@@ -139,7 +141,7 @@ width: 40vw;
     text-align: center;
 }
 
-.faq_button{
+.faq_button, .empezar_button{
     background-color: var(--colorPurplePrimary);
 }
 
@@ -153,7 +155,7 @@ width: 40vw;
     font-weight: bold;
     font-size: 1.4vw;
 }
-.faq_button > a{
+.faq_button, .empezar_button > a{
     text-decoration: none;
     font-size: 1.4vw;
 }
@@ -165,6 +167,64 @@ width: 40vw;
 
 #quienes_somos {
     background-color: var(--colorWhite);
-    width: 1;
+    height:20vw;
     color: var(--colorBlack);
+    display: flex;
+    padding: 3vw 2vw 0 2vw;
+}
+.qs_text{
+    padding: 0 6vw 0 0;
+    text-align: justify;
+}
+.qs_text > h2, p {
+    color: var(--colorBlack);
+}
+.qs_text > h2 {
+    font-size: 4vw;
+    font-weight: 100;
+    padding-bottom: 1.5vw;
+}
+.qs_text > p {
+ font-size: 1.6vw;
+ text-align: justify;
+}
+
+.qs_video > video {
+    width: 40vw;
+    translate: -3vw -8vw;
+    border-radius: 2vw;
+}
+
+
+
+/* Personaliza */
+#personaliza {
+    background-color: var(--colorWhite);
+    display: flex;
+    align-items: center;
+    padding: 0vw 12vw;
+    height: 32vw;
+}
+.p_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p_text > h2, p {
+    color: var(--colorBlack);
+    text-align: center;
+}
+.p_text > h2 {
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 5vw;
+}
+.p_text > p {
+ font-size: 1.6vw;
+ padding: 1.3vw;
+}
+
+.p_image > img {
+width: 30vw;
 }
